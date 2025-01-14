@@ -1,11 +1,47 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Spacer from "../components/Spacer.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <article>
+    <h1>Hello</h1>
+
+    <p class="p">
+      I’m Joni Anggara, a technical developer at <a href="https://7togk.id"
+        >7TogkID</a
+      >, where we specialize in creating innovative web and mobile solutions for
+      various industries.
+    </p>
+
+    <p class="p">
+      Over the years, I’ve had the opportunity to work on a wide range of
+      projects, including building Minecraft servers, designing websites, and
+      developing mobile apps. Each project brings a new challenge and I enjoy
+      solving problems and creating seamless user experiences.
+    </p>
+
+    <p class="p">
+      You can find out <a href="/about">more about me</a>.
+    </p>
+  </article>
+
+  <Spacer />
+
+  <article>
+    <h1>About this site...</h1>
+
+    <p class="p">
+      This website was developed with <a href="https://astro.build/">AstroJS</a>
+      framework technology.
+    </p>
+
+    <p class="p">Why AstroJS? because I just like that :)</p>
+
+    <p class="p">
+      Reference or credit: <a href="https://rachelandrew.co.uk/"
+        >Rachel Andrew  </a>
+    </p>
+  </article>
 </Layout>
+

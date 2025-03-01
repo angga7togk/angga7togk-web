@@ -36,7 +36,7 @@ const Navbar = () => {
       } md:translate-0 w-full md:w-[30%] bg-gray-300 dark:bg-zinc-800 h-screen transition-all duration-300 z-50`}
     >
       <div className="w-full h-full relative">
-        <hr onClick={toggle} className={`absolute right-0.5 top-1/2 -translate-y-1/2 h-1/4 border border-gray-500 ${open && 'hidden'}`}>
+        <hr onClick={toggle} className={`absolute right-0.5 top-1/2 -translate-y-1/2 h-1/4 border border-gray-500 ${open && 'hidden'} md:hidden`}>
 
         </hr>
 

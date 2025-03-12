@@ -6,7 +6,6 @@ import Link from "next/link";
 import { useLangContext } from "@/context/LangContext";
 import NavLink from "../buttons/NavLink";
 import {
-  FaArrowAltCircleRight,
   FaGithub,
   FaInstagram,
   FaYoutube,
@@ -32,7 +31,7 @@ const Navbar = () => {
     <nav
       {...handlers}
       className={`fixed top-0 left-0 ${
-        !open ? "-translate-x-86.5 rounded-r-2xl" : "translate-x-0"
+        !open ? "-translate-x-[97%] rounded-r-2xl" : "translate-x-0"
       } md:translate-0 w-full md:w-[30%] bg-gray-300 dark:bg-zinc-800 h-screen transition-all duration-300 z-50`}
     >
       <div className="w-full h-full relative">

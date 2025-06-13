@@ -1,5 +1,5 @@
 # ngambil image node versi terbaru
-FROM node:latest
+FROM node:19.5.0-alpine
 
 #set working directory
 WORKDIR /usr/src/app

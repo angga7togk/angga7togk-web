@@ -1,23 +1,23 @@
 # ngambil image node versi terbaru
-FROM node:19.5.0-alpine
+FROM node:latest
 
-#set working directory
-WORKDIR /usr/src/app
+# Set the working directory in the container
+WORKDIR /app
 
-#Ngopi package.json dan package-lock.json
+# Copy package.json and package-lock.json to the working directory
 COPY package*.json ./
 
-#install dependencies
+# Install dependencies
 RUN npm install
 
-#copy printilan file environment
+# Copy the rest of your application code to the working directory
 COPY . .
 
-#build app into production mode
+# Build the Next.js application
 RUN npm run build
 
-#expose port 8881 to the isekai
-EXPOSE 8881
+# Expose the port that the app will run on
+EXPOSE 3000
 
-#start app
+# Start the application
 CMD ["npm", "start"]

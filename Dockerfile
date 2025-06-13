@@ -4,14 +4,8 @@ FROM node:latest
 #set working directory
 WORKDIR /usr/src/app
 
-#Ngopi package.json dan package-lock.json
-COPY package*.json ./
-
 #install dependencies
 RUN npm install
-
-#copy printilan file environment
-COPY . .
 
 #build app into production mode
 RUN npm run build

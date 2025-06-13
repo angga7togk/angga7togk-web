@@ -23,7 +23,7 @@ const Layout = ({
         <link rel="shortcut icon" href="/img/icon.png" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <meta name="description" content={description || ""} />
-        
+        <meta name="og:image" />
         <link
           rel="preconnect"  
           href="https://fonts.gstatic.com"

@@ -1,0 +1,49 @@
+import Layout from '@/components/layouts/Layout'
+ 
+# Cara Menginstal Python dan Pip di Ubuntu 24.04
+
+Python adalah bahasa pemrograman serba guna modern yang cocok untuk berbagai tugas pengembangan dan penulisan skrip. Pip adalah penginstal paket untuk Python yang memungkinkan Anda menginstal dan mengelola pustaka tambahan yang bukan bagian dari pustaka Python standar di server.
+
+Artikel ini menjelaskan cara menginstal Python dan Pip di server Ubuntu 24.04, beserta mengelola proses aplikasi di server Anda. Anda akan mempelajari cara menginstal Python di Ubuntu 24.04 menggunakan PPA untuk mendapatkan versi terbaru, mengelola beberapa versi Python, dan menggunakan paket lingkungan virtual Python, virtualenv, untuk membuat lingkungan pengembangan yang terisolasi.
+
+## Instal Python di Ubuntu 24.04
+
+1. Tambahkan PPA `deadsnakes` ke sumber server Anda.
+   ```bash
+   $ sudo add-apt-repository ppa:deadsnakes/ppa
+   ```
+2. Perbarui indeks paket server.
+   ```bash
+   $ sudo apt update
+   ```
+3. Instal versi Python terbaru di server Anda.
+   ```bash
+   $ sudo sudo apt install python3
+   ```
+   Jalankan perintah berikut untuk menginstal versi tertentu seperti 3.10.
+   ```bash
+   $ sudo apt install python3.10
+   ```
+4. Lihat versi Python yang terinstal di server Anda.
+   ```bash
+   $ python3 --version
+   ```
+   Output: `Python 3.12.3`
+
+## Instal Pip di Ubuntu 24.04
+
+1. Jalankan perintah berikut untuk menginstal modul Pip.
+   ```bash
+   $ sudo apt install -y python3-pip
+   ```
+2. Lihat versi Pip yang terinstal di server Anda.
+   ```bash
+   $ pip3 --version
+   ```
+   Output `pip 24.0 dari /usr/lib/python3/dist-packages/pip (python 3.12)`
+
+export default function MDXPage({ children }) {
+  
+  return children;
+
+}

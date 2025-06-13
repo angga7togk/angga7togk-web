@@ -1,0 +1,52 @@
+import Layout from '@/components/layouts/Layout'
+ 
+# How to Install Python and Pip on Ubuntu 24.04
+
+Python is a modern general-purpose programming language suitable for various development and scripting tasks. Pip is a package installer for Python that allows you to install and manage additional libraries that are not part of the standard Python library on a server.
+
+This article explains how to install Python and Pip on an Ubuntu 24.04 server, along with managing application processes on your server. You will learn how to install Python on Ubuntu 24.04 using a PPA to get the latest version, manage multiple Python versions, and use the Python virtual environment package, virtualenv, to create isolated development environments.
+
+## Install Python on Ubuntu 24.04
+
+Python is available in the default APT repositories on Ubuntu 24.04 but may not be the latest version. Personal Package Archives (PPAs) enable the installation of custom application packages on a server, and you can use the `deadsnakes` PPA to install the latest or specific Python version on your server. Follow the steps below to install the latest Python version using the PPA.
+
+1. Add the `deadsnakes` PPA to your server sources.
+   ```bash
+   $ sudo add-apt-repository ppa:deadsnakes/ppa
+   ```
+2. Update the server package index.
+   ```bash
+   $ sudo apt update
+   ```
+3. Install the latest Python version on your server.
+   ```bash
+   $ sudo sudo apt install python3
+   ```
+   Run the following command to install a specific version such as 3.10.
+   ```bash
+   $ sudo apt install python3.10
+   ```
+4. View the installed Python version on your server.
+   ```bash
+   $ python3 --version
+   ```
+   Output
+   `Python 3.12.3`
+
+## Install Pip on Ubuntu 24.04
+
+1. Run the following command to install Pip module.
+   ```bash
+   $ sudo apt install -y python3-pip
+   ```
+2. View the installed Pip version on your server.
+   ```bash
+   $ pip3 --version
+   ```
+   Output `pip 24.0 from /usr/lib/python3/dist-packages/pip (python 3.12)`
+
+export default function MDXPage({ children }) {
+  
+  return children;
+
+}

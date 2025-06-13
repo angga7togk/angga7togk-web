@@ -1,25 +1,23 @@
 # ngambil image node versi terbaru
 FROM node:latest
 
-# Set the working directory in the container
-WORKDIR /app
+#set working directory
+WORKDIR /usr/src/app
 
-RUN chown -R app /app 
-
-# Copy package.json and package-lock.json to the working directory
+#Ngopi package.json dan package-lock.json
 COPY package*.json ./
 
-# Install dependencies
+#install dependencies
 RUN npm install
 
-# Copy the rest of your application code to the working directory
+#copy printilan file environment
 COPY . .
 
-# Build the Next.js application
+#build app into production mode
 RUN npm run build
 
-# Expose the port that the app will run on
+#expose port 3000 to the isekai
 EXPOSE 8881
 
-# Start the application
+#start app
 CMD ["npm", "start"]
